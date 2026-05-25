@@ -1,0 +1,13 @@
+import random
+
+caracteres = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+longitud = int(input("Longitud:"))
+
+password = ""
+
+for i in range(longitud):
+    caracter_aleatorio = random.choice(caracteres)
+    password += caracter_aleatorio
+
+print("Password:", password)
